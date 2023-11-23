@@ -1,8 +1,11 @@
 <?php
 
 use App\Model\AirQuality\AirQuality;
+use App\Service\Router\Router;
 
-$root = $_SERVER['DOCUMENT_ROOT'];
-
+$root = dirname($_SERVER['DOCUMENT_ROOT']);
 require_once $root.'/vendor/autoload.php';
-AirQuality::test();
+
+$router = new Router();
+$router->start();
+

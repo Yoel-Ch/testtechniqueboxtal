@@ -1,3 +1,4 @@
+Pour que les url fonctionnent, avec le serveur intégré de php, il faut effectuer la commande : php -S localhost:8000 -t public
 
 Développer une application PHP permettant de visualiser graphiquement l'historique de qualité de l'air d'une localité donnée sur les 30 derniers jours.
 Pour cela tu utiliseras :

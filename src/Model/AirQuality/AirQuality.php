@@ -2,9 +2,11 @@
 
 namespace App\Model\AirQuality;
 
+use Symfony\Component\VarDumper\VarDumper;
+
 class AirQuality
 {
     public static function test(){
-        echo "test";
+        VarDumper::dump('qsfqmsfjqsdmlkjqsdmljfkm');
     }
 }
