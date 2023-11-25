@@ -1,11 +1,12 @@
 <?php
 
+use App\Core\Router\Router;
 use App\Model\AirQuality\AirQuality;
-use App\Service\Router\Router;
 
 $root = dirname($_SERVER['DOCUMENT_ROOT']);
 require_once $root.'/vendor/autoload.php';
-
+$dotenv = Dotenv\Dotenv::createImmutable($root);
+$dotenv->load();
 $router = new Router();
 $router->start();
 
