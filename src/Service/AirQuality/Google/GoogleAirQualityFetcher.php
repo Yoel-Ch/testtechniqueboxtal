@@ -20,7 +20,8 @@ class GoogleAirQualityFetcher implements AirQualityGetterInterface
     public function getAirQualityData(float $latitude, float $longitude): array {
         $endTime = new \DateTime('yesterday');
         $endTime->setTime(23, 59, 59);
-        $startTime = (new \DateTime('yesterday'))->modify('-28 days');
+        $numberOfDaysToFetch = 28;
+        $startTime = (new \DateTime('yesterday'))->modify('-'.$numberOfDaysToFetch.' days');
         $startTime->setTime(0, 0, 0);
 
         $airQualityData = [];

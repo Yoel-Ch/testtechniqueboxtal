@@ -1,0 +1,139 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: url('../image/background.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+}
+
+#main-title {
+    color: #4a4a4a;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+#selector-container {
+    margin-bottom: 20px;
+}
+
+#citySelector {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#citySelector:hover,
+#citySelector:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#chart-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+    #main-title {
+        font-size: 5vw;
+    }
+
+    #selector-container {
+        margin-bottom: 15px;
+    }
+
+    #citySelector {
+        padding: 8px;
+        font-size: 3.5vw;
+    }
+
+    #chart-container {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #content {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #main-title {
+        font-size: 6em;
+    }
+
+    #selector-container {
+        margin-bottom: 20px;
+    }
+
+    #citySelector {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #chart-container {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #main-title {
+        font-size: 2em;
+    }
+
+    #selector-container {
+        margin-bottom: 25px;
+    }
+
+    #citySelector {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    #chart-container {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #main-title {
+        font-size: 1.75em;
+    }
+
+    #selector-container {
+        margin-bottom: 30px;
+    }
+
+    #citySelector {
+        padding: 15px;
+        font-size: 1.1em;
+    }
+
+    #chart-container {
+        margin-top: 30px;
+    }
+}
