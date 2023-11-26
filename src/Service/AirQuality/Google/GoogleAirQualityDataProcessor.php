@@ -11,13 +11,13 @@ class GoogleAirQualityDataProcessor
             $dateObject = new \DateTime($day[0]->dateTime);
             $formattedDate = $dateObject->format('d-m-Y');
 
-            $aqis = $this->calculateAverage($day, 'aqi');
+            $iqas = $this->calculateAverage($day, 'aqi');
             $red = $this->calculateAverageColor($day, 'red');
             $green = $this->calculateAverageColor($day, 'green');
             $blue = $this->calculateAverageColor($day, 'blue');
 
             $processedArray[$formattedDate] = [
-                'iqa' => $aqis,
+                'iqa' => $iqas,
                 'red' => $red*255,
                 'green' => $green*255,
                 'blue' => $blue*255

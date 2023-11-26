@@ -13,4 +13,3 @@ Une CSS de base par défaut du framework UI choisi
 Un sélecteur de localité par liste déroulante avec latitudes et longitudes codées en dur (2 villes suffisent)
 La première localité de cette liste est sélectionnée par défaut à l'arrivée sur la page et le graphique correspondant affiché
 Le changement de localité déclenche l'actualisation du graphique affiché
----

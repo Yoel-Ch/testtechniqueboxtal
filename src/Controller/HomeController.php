@@ -2,12 +2,11 @@
 
 namespace App\Controller;
 
-use App\Core\BaseController;
+use App\Core\Controller\BaseController;
 use App\Service\AirQuality\Google\GoogleAirQualityDataProcessor;
 use App\Service\AirQuality\Google\GoogleAirQualityFetcher;
 use App\Service\ApiRequester\ApiRequester;
 use App\Service\UrlTools\UrlParamConverter;
-use Symfony\Component\VarDumper\VarDumper;
 
 class HomeController extends BaseController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core;
+namespace App\Core\Controller;
 
 abstract class BaseController
 {
@@ -15,6 +15,6 @@ abstract class BaseController
 
     protected function getViewPath()
     {
-        return dirname(dirname(__DIR__)) . '/views';
+        return dirname(__DIR__, 3) . '/views';
     }
 }
